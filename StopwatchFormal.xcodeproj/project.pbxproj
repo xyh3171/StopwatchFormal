@@ -8,13 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		4FB24A2F1CD85285008D1083 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FB24A2E1CD85285008D1083 /* main.m */; };
-		4FB24A321CD85285008D1083 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FB24A311CD85285008D1083 /* AppDelegate.m */; };
+		4FB24A321CD85285008D1083 /* FNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FB24A311CD85285008D1083 /* FNAppDelegate.m */; };
 		4FB24A351CD85285008D1083 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FB24A341CD85285008D1083 /* ViewController.m */; };
 		4FB24A381CD85285008D1083 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FB24A361CD85285008D1083 /* Main.storyboard */; };
 		4FB24A3A1CD85285008D1083 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FB24A391CD85285008D1083 /* Assets.xcassets */; };
 		4FB24A3D1CD85285008D1083 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FB24A3B1CD85285008D1083 /* LaunchScreen.storyboard */; };
 		4FB24A481CD85285008D1083 /* StopwatchFormalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FB24A471CD85285008D1083 /* StopwatchFormalTests.m */; };
 		4FB24A531CD85285008D1083 /* StopwatchFormalUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FB24A521CD85285008D1083 /* StopwatchFormalUITests.m */; };
+		4FB24A7A1CD8538B008D1083 /* libFMDB-IOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FB24A731CD8536F008D1083 /* libFMDB-IOS.a */; };
+		4FB24A7C1CD8539C008D1083 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FB24A7B1CD8539C008D1083 /* libsqlite3.0.tbd */; };
+		4FB24A861CD854DA008D1083 /* FNWorldClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FB24A851CD854DA008D1083 /* FNWorldClockViewController.m */; };
+		4FB24A8C1CD85617008D1083 /* FNAlarmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FB24A8B1CD85617008D1083 /* FNAlarmViewController.m */; };
+		4FB24A921CD8565C008D1083 /* FNStopwatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FB24A911CD8565C008D1083 /* FNStopwatchViewController.m */; };
+		4FB24A981CD856A2008D1083 /* FNTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FB24A971CD856A2008D1083 /* FNTimerViewController.m */; };
+		4FB24AA21CD85805008D1083 /* FNTimeRecordModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FB24AA11CD85805008D1083 /* FNTimeRecordModel.m */; };
+		4FB55EDC1CD872900083FA88 /* FNStopwatchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FB55EDB1CD872900083FA88 /* FNStopwatchView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,13 +40,62 @@
 			remoteGlobalIDString = 4FB24A291CD85285008D1083;
 			remoteInfo = StopwatchFormal;
 		};
+		4FB24A6C1CD8536F008D1083 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4FB24A631CD8536F008D1083 /* fmdb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DD76FA10486AA7600D96B5E;
+			remoteInfo = fmdb;
+		};
+		4FB24A6E1CD8536F008D1083 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4FB24A631CD8536F008D1083 /* fmdb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE4290EF12B42F870088BD94;
+			remoteInfo = FMDB;
+		};
+		4FB24A701CD8536F008D1083 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4FB24A631CD8536F008D1083 /* fmdb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BF5D041618416BB2008C5AA9;
+			remoteInfo = Tests;
+		};
+		4FB24A721CD8536F008D1083 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4FB24A631CD8536F008D1083 /* fmdb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6290CBB5188FE836009790F8;
+			remoteInfo = "FMDB-IOS";
+		};
+		4FB24A741CD8536F008D1083 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4FB24A631CD8536F008D1083 /* fmdb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 83C73EFE1C326AB000FFC730;
+			remoteInfo = "FMDB iOS";
+		};
+		4FB24A761CD8536F008D1083 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4FB24A631CD8536F008D1083 /* fmdb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 83C73F0B1C326ADA00FFC730;
+			remoteInfo = "FMDB MacOS";
+		};
+		4FB24A781CD85381008D1083 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4FB24A631CD8536F008D1083 /* fmdb.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 83C73EFD1C326AB000FFC730;
+			remoteInfo = "FMDB iOS";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		4FB24A2A1CD85285008D1083 /* StopwatchFormal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StopwatchFormal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FB24A2E1CD85285008D1083 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4FB24A301CD85285008D1083 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		4FB24A311CD85285008D1083 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4FB24A301CD85285008D1083 /* FNAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FNAppDelegate.h; sourceTree = "<group>"; };
+		4FB24A311CD85285008D1083 /* FNAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FNAppDelegate.m; sourceTree = "<group>"; };
 		4FB24A331CD85285008D1083 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		4FB24A341CD85285008D1083 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		4FB24A371CD85285008D1083 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -51,6 +108,21 @@
 		4FB24A4E1CD85285008D1083 /* StopwatchFormalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StopwatchFormalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FB24A521CD85285008D1083 /* StopwatchFormalUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StopwatchFormalUITests.m; sourceTree = "<group>"; };
 		4FB24A541CD85285008D1083 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FB24A631CD8536F008D1083 /* fmdb.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = fmdb.xcodeproj; path = "../fmdb-master/fmdb.xcodeproj"; sourceTree = "<group>"; };
+		4FB24A7B1CD8539C008D1083 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		4FB24A841CD854DA008D1083 /* FNWorldClockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNWorldClockViewController.h; sourceTree = "<group>"; };
+		4FB24A851CD854DA008D1083 /* FNWorldClockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNWorldClockViewController.m; sourceTree = "<group>"; };
+		4FB24A8A1CD85617008D1083 /* FNAlarmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNAlarmViewController.h; sourceTree = "<group>"; };
+		4FB24A8B1CD85617008D1083 /* FNAlarmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNAlarmViewController.m; sourceTree = "<group>"; };
+		4FB24A901CD8565C008D1083 /* FNStopwatchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNStopwatchViewController.h; sourceTree = "<group>"; };
+		4FB24A911CD8565C008D1083 /* FNStopwatchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNStopwatchViewController.m; sourceTree = "<group>"; };
+		4FB24A961CD856A2008D1083 /* FNTimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNTimerViewController.h; sourceTree = "<group>"; };
+		4FB24A971CD856A2008D1083 /* FNTimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNTimerViewController.m; sourceTree = "<group>"; };
+		4FB24A991CD85752008D1083 /* Macro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macro.h; sourceTree = "<group>"; };
+		4FB24AA01CD85805008D1083 /* FNTimeRecordModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNTimeRecordModel.h; sourceTree = "<group>"; };
+		4FB24AA11CD85805008D1083 /* FNTimeRecordModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNTimeRecordModel.m; sourceTree = "<group>"; };
+		4FB55EDA1CD872900083FA88 /* FNStopwatchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNStopwatchView.h; sourceTree = "<group>"; };
+		4FB55EDB1CD872900083FA88 /* FNStopwatchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNStopwatchView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +130,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FB24A7C1CD8539C008D1083 /* libsqlite3.0.tbd in Frameworks */,
+				4FB24A7A1CD8538B008D1083 /* libFMDB-IOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,10 +155,12 @@
 		4FB24A211CD85285008D1083 = {
 			isa = PBXGroup;
 			children = (
+				4FB24A7B1CD8539C008D1083 /* libsqlite3.0.tbd */,
 				4FB24A2C1CD85285008D1083 /* StopwatchFormal */,
 				4FB24A461CD85285008D1083 /* StopwatchFormalTests */,
 				4FB24A511CD85285008D1083 /* StopwatchFormalUITests */,
 				4FB24A2B1CD85285008D1083 /* Products */,
+				4FB24A631CD8536F008D1083 /* fmdb.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,14 +177,11 @@
 		4FB24A2C1CD85285008D1083 /* StopwatchFormal */ = {
 			isa = PBXGroup;
 			children = (
-				4FB24A301CD85285008D1083 /* AppDelegate.h */,
-				4FB24A311CD85285008D1083 /* AppDelegate.m */,
-				4FB24A331CD85285008D1083 /* ViewController.h */,
-				4FB24A341CD85285008D1083 /* ViewController.m */,
-				4FB24A361CD85285008D1083 /* Main.storyboard */,
-				4FB24A391CD85285008D1083 /* Assets.xcassets */,
-				4FB24A3B1CD85285008D1083 /* LaunchScreen.storyboard */,
-				4FB24A3E1CD85285008D1083 /* Info.plist */,
+				4FB24A301CD85285008D1083 /* FNAppDelegate.h */,
+				4FB24A311CD85285008D1083 /* FNAppDelegate.m */,
+				4FB24A621CD85349008D1083 /* Others */,
+				4FB24A611CD8532C008D1083 /* Common */,
+				4FB24A601CD8531F008D1083 /* Features */,
 				4FB24A2D1CD85285008D1083 /* Supporting Files */,
 			);
 			path = StopwatchFormal;
@@ -117,6 +190,8 @@
 		4FB24A2D1CD85285008D1083 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4FB24A3E1CD85285008D1083 /* Info.plist */,
+				4FB24A391CD85285008D1083 /* Assets.xcassets */,
 				4FB24A2E1CD85285008D1083 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -140,6 +215,185 @@
 			path = StopwatchFormalUITests;
 			sourceTree = "<group>";
 		};
+		4FB24A601CD8531F008D1083 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				4FB24A801CD85483008D1083 /* Worldclock */,
+				4FB24A7F1CD85478008D1083 /* Alarm */,
+				4FB24A7E1CD85470008D1083 /* Stopwatch */,
+				4FB24A7D1CD85428008D1083 /* Timer */,
+			);
+			name = Features;
+			sourceTree = "<group>";
+		};
+		4FB24A611CD8532C008D1083 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				4FB24A991CD85752008D1083 /* Macro.h */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		4FB24A621CD85349008D1083 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				4FB24A331CD85285008D1083 /* ViewController.h */,
+				4FB24A341CD85285008D1083 /* ViewController.m */,
+				4FB24A361CD85285008D1083 /* Main.storyboard */,
+				4FB24A3B1CD85285008D1083 /* LaunchScreen.storyboard */,
+			);
+			name = Others;
+			sourceTree = "<group>";
+		};
+		4FB24A641CD8536F008D1083 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4FB24A6D1CD8536F008D1083 /* fmdb */,
+				4FB24A6F1CD8536F008D1083 /* libFMDB.a */,
+				4FB24A711CD8536F008D1083 /* Tests.xctest */,
+				4FB24A731CD8536F008D1083 /* libFMDB-IOS.a */,
+				4FB24A751CD8536F008D1083 /* FMDB.framework */,
+				4FB24A771CD8536F008D1083 /* FMDB.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4FB24A7D1CD85428008D1083 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				4FB24A951CD85685008D1083 /* Models */,
+				4FB24A941CD8567A008D1083 /* Viewers */,
+				4FB24A931CD85667008D1083 /* Controllers */,
+			);
+			name = Timer;
+			sourceTree = "<group>";
+		};
+		4FB24A7E1CD85470008D1083 /* Stopwatch */ = {
+			isa = PBXGroup;
+			children = (
+				4FB24A8F1CD85635008D1083 /* Models */,
+				4FB24A8E1CD8562A008D1083 /* Viewers */,
+				4FB24A8D1CD85620008D1083 /* Controllers */,
+			);
+			name = Stopwatch;
+			sourceTree = "<group>";
+		};
+		4FB24A7F1CD85478008D1083 /* Alarm */ = {
+			isa = PBXGroup;
+			children = (
+				4FB24A891CD855DE008D1083 /* Models */,
+				4FB24A881CD855D0008D1083 /* viewers */,
+				4FB24A871CD854E2008D1083 /* Controllers */,
+			);
+			name = Alarm;
+			sourceTree = "<group>";
+		};
+		4FB24A801CD85483008D1083 /* Worldclock */ = {
+			isa = PBXGroup;
+			children = (
+				4FB24A831CD854C3008D1083 /* Models */,
+				4FB24A821CD854B8008D1083 /* Viewers */,
+				4FB24A811CD854AF008D1083 /* Controllers */,
+			);
+			name = Worldclock;
+			sourceTree = "<group>";
+		};
+		4FB24A811CD854AF008D1083 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4FB24A841CD854DA008D1083 /* FNWorldClockViewController.h */,
+				4FB24A851CD854DA008D1083 /* FNWorldClockViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		4FB24A821CD854B8008D1083 /* Viewers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Viewers;
+			sourceTree = "<group>";
+		};
+		4FB24A831CD854C3008D1083 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		4FB24A871CD854E2008D1083 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4FB24A8A1CD85617008D1083 /* FNAlarmViewController.h */,
+				4FB24A8B1CD85617008D1083 /* FNAlarmViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		4FB24A881CD855D0008D1083 /* viewers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = viewers;
+			sourceTree = "<group>";
+		};
+		4FB24A891CD855DE008D1083 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		4FB24A8D1CD85620008D1083 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4FB24A901CD8565C008D1083 /* FNStopwatchViewController.h */,
+				4FB24A911CD8565C008D1083 /* FNStopwatchViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		4FB24A8E1CD8562A008D1083 /* Viewers */ = {
+			isa = PBXGroup;
+			children = (
+				4FB55EDA1CD872900083FA88 /* FNStopwatchView.h */,
+				4FB55EDB1CD872900083FA88 /* FNStopwatchView.m */,
+			);
+			name = Viewers;
+			sourceTree = "<group>";
+		};
+		4FB24A8F1CD85635008D1083 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4FB24AA01CD85805008D1083 /* FNTimeRecordModel.h */,
+				4FB24AA11CD85805008D1083 /* FNTimeRecordModel.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		4FB24A931CD85667008D1083 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4FB24A961CD856A2008D1083 /* FNTimerViewController.h */,
+				4FB24A971CD856A2008D1083 /* FNTimerViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		4FB24A941CD8567A008D1083 /* Viewers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Viewers;
+			sourceTree = "<group>";
+		};
+		4FB24A951CD85685008D1083 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -154,6 +408,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				4FB24A791CD85381008D1083 /* PBXTargetDependency */,
 			);
 			name = StopwatchFormal;
 			productName = StopwatchFormal;
@@ -232,6 +487,12 @@
 			mainGroup = 4FB24A211CD85285008D1083;
 			productRefGroup = 4FB24A2B1CD85285008D1083 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4FB24A641CD8536F008D1083 /* Products */;
+					ProjectRef = 4FB24A631CD8536F008D1083 /* fmdb.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				4FB24A291CD85285008D1083 /* StopwatchFormal */,
@@ -240,6 +501,51 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		4FB24A6D1CD8536F008D1083 /* fmdb */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = fmdb;
+			remoteRef = 4FB24A6C1CD8536F008D1083 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4FB24A6F1CD8536F008D1083 /* libFMDB.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFMDB.a;
+			remoteRef = 4FB24A6E1CD8536F008D1083 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4FB24A711CD8536F008D1083 /* Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = Tests.xctest;
+			remoteRef = 4FB24A701CD8536F008D1083 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4FB24A731CD8536F008D1083 /* libFMDB-IOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libFMDB-IOS.a";
+			remoteRef = 4FB24A721CD8536F008D1083 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4FB24A751CD8536F008D1083 /* FMDB.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FMDB.framework;
+			remoteRef = 4FB24A741CD8536F008D1083 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4FB24A771CD8536F008D1083 /* FMDB.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FMDB.framework;
+			remoteRef = 4FB24A761CD8536F008D1083 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		4FB24A281CD85285008D1083 /* Resources */ = {
@@ -273,9 +579,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FB24A921CD8565C008D1083 /* FNStopwatchViewController.m in Sources */,
+				4FB24AA21CD85805008D1083 /* FNTimeRecordModel.m in Sources */,
 				4FB24A351CD85285008D1083 /* ViewController.m in Sources */,
-				4FB24A321CD85285008D1083 /* AppDelegate.m in Sources */,
+				4FB24A981CD856A2008D1083 /* FNTimerViewController.m in Sources */,
+				4FB24A8C1CD85617008D1083 /* FNAlarmViewController.m in Sources */,
+				4FB24A321CD85285008D1083 /* FNAppDelegate.m in Sources */,
+				4FB24A861CD854DA008D1083 /* FNWorldClockViewController.m in Sources */,
 				4FB24A2F1CD85285008D1083 /* main.m in Sources */,
+				4FB55EDC1CD872900083FA88 /* FNStopwatchView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +619,11 @@
 			isa = PBXTargetDependency;
 			target = 4FB24A291CD85285008D1083 /* StopwatchFormal */;
 			targetProxy = 4FB24A4F1CD85285008D1083 /* PBXContainerItemProxy */;
+		};
+		4FB24A791CD85381008D1083 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "FMDB iOS";
+			targetProxy = 4FB24A781CD85381008D1083 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -499,6 +816,7 @@
 				4FB24A591CD85285008D1083 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4FB24A5A1CD85285008D1083 /* Build configuration list for PBXNativeTarget "StopwatchFormalTests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +825,7 @@
 				4FB24A5C1CD85285008D1083 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4FB24A5D1CD85285008D1083 /* Build configuration list for PBXNativeTarget "StopwatchFormalUITests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +834,7 @@
 				4FB24A5F1CD85285008D1083 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
