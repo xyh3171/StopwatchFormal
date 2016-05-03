@@ -135,23 +135,22 @@ static int onClickCount = 0;
 - (void)startSmallTimerMethod:(NSTimer*)theTimer {
     
     //1. 时间字符串 -> 时间戳
-    NSString *string = @"10";
-    _smallTimeLblSecond = _smallTimeLblSecond + (string.longLongValue / 1000.0);//3600 000除以1000毫秒等于一个小时
+    NSString *string = @"10";// 0.01秒
+    _smallTimeLblSecond = _smallTimeLblSecond + (string.longLongValue / 1000.0);//10除以1000毫秒等于0.01秒
     
-    // 时间戳 -> NSDate *
+    // 时间戳 -> NSDate
     _endDate = [NSDate dateWithTimeIntervalSince1970:_smallTimeLblSecond];// 这是GMT ＋ 8 的时间
     
     NSTimeZone *zone = [NSTimeZone systemTimeZone];
     
-    // 获取当前时区和指定时间差,可算出GMT + 0 的时间
+    // 获取当前时区和格林尼治GMT 0 的时间差
     NSInteger seconds = [zone secondsFromGMTForDate:_endDate];
     
+    // 用当前时区的时间减去（GMT 0 到当前时区的时间差） ＝ GMT 0的时间
     _endDate = [_endDate dateByAddingTimeInterval:-seconds];
-    //NSLog(@"nowDate = %@", _endDate);//这是是GMT ＋ 0 的时间
     
     // 时间转字符串
     _smallTimeLblRecord = [_formatter stringFromDate:_endDate];
-    
     
     // 显示到lbl
     _stopwatchViewC.smallTimeLbl.text = _smallTimeLblRecord;
@@ -161,29 +160,13 @@ static int onClickCount = 0;
 
 - (void)startBigTimerMethod:(NSTimer*)theTimer {
     
-    //1. 时间字符串 -> 时间戳
     NSString *string = @"10";
-    _bigTimeLblSecond = _bigTimeLblSecond + (string.longLongValue / 1000.0);//3600 000除以1000毫秒等于一个小时
-    
-    // 时间戳 -> NSDate *
-    _endDate = [NSDate dateWithTimeIntervalSince1970:_bigTimeLblSecond];// 这是GMT ＋ 8 的时间
-    
-    //NSLog(@"_endDate date = %@", _endDate);
-    
+    _bigTimeLblSecond = _bigTimeLblSecond + (string.longLongValue / 1000.0);
+    _endDate = [NSDate dateWithTimeIntervalSince1970:_bigTimeLblSecond];
     NSTimeZone *zone = [NSTimeZone systemTimeZone];
-    //NSLog(@"now = %@", zone);//now = Asia/Shanghai (GMT+8) offset 28800
-    
-    // 获取当前时区和指定时间差,可算出GMT + 0 的时间
     NSInteger seconds = [zone secondsFromGMTForDate:_endDate];
-    //NSLog(@"seconds = %lu", seconds);// seconds = 28800
-    
     _endDate = [_endDate dateByAddingTimeInterval:-seconds];
-    //NSLog(@"nowDate = %@", _endDate);//这是是GMT ＋ 0 的时间
-    
-    // 时间转字符串
     _bigTimeLblRecord = [_formatter stringFromDate:_endDate];
-    
-    // 显示到lbl
     _stopwatchViewC.bigTimeLbl.text = _bigTimeLblRecord;
     
 }

@@ -27,7 +27,7 @@
     // 2.1 World Clock
     FNWorldClockViewController *worldClockViewController = [[FNWorldClockViewController alloc] init];
     worldClockViewController.title = @"World Clock";
-    // 创建图标
+    //  创建图标
     tabImage = [[UIImage imageNamed:@"TabBar_Main"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
     tabImageHighlight = [[UIImage imageNamed:@"TabBar_Main_HL"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
     //  创建导航控制器的TabBarItem
@@ -38,7 +38,7 @@
     // 2.2 Alarm
     FNAlarmViewController *alarmViewController = [[FNAlarmViewController alloc] init];
     alarmViewController.title = @"Alarm";
-    //创建图标
+    //  创建图标
     tabImage = [[UIImage imageNamed:@"TabBar_Explore"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
     tabImageHighlight = [[UIImage imageNamed:@"TabBar_Explore_HL"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
     //  创建导航控制器的TabBarItem
@@ -49,7 +49,7 @@
     // 2.3 Stopwatch
     FNStopwatchViewController *stopwatchViewController = [[FNStopwatchViewController alloc] init];
     stopwatchViewController.title = @"Stopwatch";
-    // 创建图标
+    //  创建图标
     tabImage = [[UIImage imageNamed:@"TabBar_Me"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
     tabImageHighlight = [[UIImage imageNamed:@"TabBar_Me_HL"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
     //  创建导航控制器的TabBarItem

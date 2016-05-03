@@ -26,7 +26,6 @@
         
         // 1.1
         _smallTimeLbl = [[UILabel alloc] initWithFrame:CGRectMake(SCR_WIDTH / 2 + 45, 40, 90, 30)];
-        
         _smallTimeLbl.text = defaultTitleLbl;
         _smallTimeLbl.textAlignment = NSTextAlignmentRight;
         _smallTimeLbl.textColor = [UIColor grayColor];
